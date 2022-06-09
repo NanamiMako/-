@@ -1,0 +1,7 @@
+/**app.wxss**/
+page{
+  /* 该 PingFangSC-Thin 平方细体 中文名字 思源 字体仅仅在苹果手机中支持该字体会使文本变细 */
+  font-family: PingFangSC-Thin;
+   /* overflow: hidden; */
+   background-color: #e8e8e8;
+  }

@@ -1,0 +1,72 @@
+@import "../..//styles/iconfont.wxss";
+.nav-box{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  .searchPage{
+    padding: 0 3%;
+    display: inline-flex;
+    .return{
+      text{
+        font-size: 54rpx;
+        color: #000;
+      }
+    }
+    .search-flex{
+      width: 60vw;
+      height: 50rpx;
+      padding: 0 4%;
+      .search-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .search-frame{
+          width: 80%;
+          height: 40rpx;
+          background-color: #f2f2f2;
+          border-radius: 45rpx;
+          padding: 10rpx 20rpx;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text{
+            flex: 1;
+            color: #666;
+            font-size: 34rpx;
+            margin-right: 16rpx;
+          }
+          input{
+            flex: 9;
+            color: #666;
+            font-size: 26rpx;
+          }
+        }
+      }
+    }
+  }
+  
+  .n-count{
+    display: flex;
+    align-items: center;
+    .n-img{
+      width: 60rpx;
+      height: 60rpx;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 16rpx;
+      image{
+        width: 100%;
+      }
+    }
+    .n-name{
+      font-size: 36rpx;
+    }
+  }
+  .nav-search{
+    position: absolute;
+    .iconfont{
+      font-size: 36rpx;
+    }
+  }
+}
+

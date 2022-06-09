@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3360808 */
+  src: url('//at.alicdn.com/t/font_3360808_bar3jj95h5h.woff2?t=1651677279160') format('woff2'), url('//at.alicdn.com/t/font_3360808_bar3jj95h5h.woff?t=1651677279160') format('woff'), url('//at.alicdn.com/t/font_3360808_bar3jj95h5h.ttf?t=1651677279160') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-fenxiang:before {
+  content: "\e633";
+}
+.icon-sousuo:before {
+  content: "\e651";
+}
+.banner {
+  height: 520rpx;
+  background-color: red;
+  position: relative;
+}
+.banner swiper {
+  width: 100%;
+  height: 100%;
+}
+.banner swiper image {
+  width: 100%;
+}
+.banner .dots {
+  position: absolute;
+  bottom: 3%;
+  right: 6%;
+  width: 80rpx;
+  height: 40rpx;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25rpx;
+  color: #eee;
+  font-size: 28rpx;
+}
+.goods-info {
+  margin-top: 15rpx;
+  padding: 3%;
+}
+.goods-info .sell-info {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.goods-info .sell-info .money {
+  color: #c70000;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.goods-info .sell-info .goodsNum {
+  color: #999;
+  font-size: 32rpx;
+}
+.goods-info .goodsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods-info .goodsTitle .goods-name {
+  flex: 5;
+  font-size: 38rpx;
+  color: #333;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-info .goodsTitle .share {
+  width: 50rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+}
+.goods-info .goodsTitle .share.share-btn {
+  padding: 0 !important;
+  border: none !important;
+  display: inline !important;
+  position: relative;
+}
+.goods-info .goodsTitle .share.share-btn .iconfont {
+  position: absolute;
+  top: -20rpx;
+  left: 0;
+  right: 0;
+  font-size: 46rpx;
+  color: #191919;
+}
+.goods-info .goodsTitle .share.share-btn .bomtext {
+  position: absolute;
+  top: 46rpx;
+  left: 0;
+  right: 0;
+  font-size: 24rpx;
+}
+.goods-detail .detail-title {
+  padding: 0 3%;
+  font-size: 36rpx;
+  color: #999;
+  line-height: 48rpx;
+}
+.goods-detail .notice {
+  padding: 0 3%;
+  line-height: 3;
+  font-size: 42rpx;
+  color: #222;
+}
+.goods-detail .notice .const {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.4;
+}
+.navBom {
+  padding: 0 4% 20rpx;
+  height: 110rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBom .bomMenu {
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navBom .bomMenu view {
+  text-align: center;
+  color: #303133;
+}
+.navBom .bomMenu view image {
+  width: 46rpx;
+  height: 46rpx;
+}
+.navBom .bomMenu .cart {
+  position: relative;
+}
+.navBom .bomMenu .cart .cartsNum {
+  position: absolute;
+  background-color: #ff6146;
+  top: -12rpx;
+  right: -10rpx;
+  padding: 0 10rpx;
+  border-radius: 15rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+.navBom .bomMenu .bomtext {
+  font-size: 26rpx;
+}
+.navBom .joinCart {
+  flex: 4 ;
+  line-height: 80rpx;
+  padding-left: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBom .joinCart .carts {
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #ff6146;
+}
+.navBom .joinCart .carts-radius {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.navBom .joinCart .carts-radius .radiusConter {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 20rpx;
+  text-align: center;
+  line-height: 130rpx;
+  border-radius: 50%;
+  background-color: #ff6146;
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #fff;
+}

@@ -1,0 +1,78 @@
+<!--pages/cart/cart.wxml-->
+<view class="header-tool" wx:if="{{isCarts}}">
+  <view class="allGoodsNum">共{{cartsData.length}}件商品</view>
+  <view class="editBtn" bind:tap="editBtn" hidden="{{isEdit}}">编辑</view>
+  <view class="editBtn" bind:tap="editBtn" hidden="{{!isEdit}}">完成</view>
+</view>
+
+<!-- 购物车每一项 -->
+<view class="isCart">
+  <!-- //购物车有商品 -->
+
+  <view wx:if="{{isCarts}}" wx:for="{{cartsData}}" wx:key="id" class="carts-item" data-cartid="{{item.id}}">
+    <view class="select">
+      <checkbox-group catchchange="goodsChange" data-cartid="{{item.id}}">
+        <checkbox checked="{{item.checked}}"></checkbox>
+      </checkbox-group>
+    </view>
+    <view class="goods-img">
+      <image mode="widthFix" src="{{item.cover_url}}"></image>
+    </view>
+    <view class="goods-info">
+      <view class="goods-title">
+        <navigator url="/pages/goods-detail/goods-detail?goods_id={{item.id}}">{{item.title}}</navigator>
+      </view>
+      <view class="goods-num">
+        <view class="goods-price">￥{{item.price}}</view>
+        <view class="goods-tool-box">
+          <view class="goods-tool tool-push" data-tool="{{1}}" data-cartid="{{item.id}}" catch:tap="goodsTool">+</view>
+          <view class="goodsNum">{{item.goodsCartNum}}</view>
+          <view class="goods-tool tool-reduce" data-tool="{{-1}}" data-cartid="{{item.id}}" catch:tap="goodsTool">-</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- //购物车没有商品 -->
+  <view wx:if="{{!isCarts}}" class="nullCart">
+    <view class="icon-box">
+      <text class="iconfont icon-shangpin"></text>
+    </view>
+    <view class="cartNull">
+      <view>购物车还是空的</view>
+      <view class="colorCCC">快去买点宝贝犒劳一下自己吧</view>
+    </view>
+    <view class="strollBtn">
+      <navigator url="/pages/index/index.wxml" open-type="switchTab">去逛逛</navigator>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="bom"></view>
+<!-- 总览 -->
+<view class="overview" wx:if="{{isCarts}}">
+  <view class="allChecked">
+    <checkbox-group bindchange="allGoodsChange">
+      <checkbox checked="{{goodsChecked}}"> 全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="overview-r" wx:if="{{!isEdit}}">
+    <view class="total">
+      <view class="heji">
+        合计:<text>￥{{allPrice}}.00</text>
+      </view>
+      <view class="allCartsNum">
+        共{{checkedNum}}件
+      </view>
+    </view>
+    <view class="check carts-radius" bind:tap="payCarts">
+      <view class="carts-radius">
+      <view class="radiusConter">买</view>
+    </view>
+    </view>
+  </view>
+  <view class="overview-r" wx:else>
+    <view class="check" bind:tap="deteleGoods">删除({{checkedNum}})</view>
+  </view>
+</view>

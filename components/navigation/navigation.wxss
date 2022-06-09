@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3360808 */
+  src: url('//at.alicdn.com/t/font_3360808_lhyt79o4cbi.woff2?t=1651751198531') format('woff2'), url('//at.alicdn.com/t/font_3360808_lhyt79o4cbi.woff?t=1651751198531') format('woff'), url('//at.alicdn.com/t/font_3360808_lhyt79o4cbi.ttf?t=1651751198531') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-fanhuijiantou:before {
+  content: "\e8b5";
+}
+.icon-31daifukuan:before {
+  content: "\e600";
+}
+.icon-31daipingjia:before {
+  content: "\e601";
+}
+.icon-tuikuantuihuo:before {
+  content: "\e602";
+}
+.icon-dingdan:before {
+  content: "\e649";
+}
+.icon-daishouhuo-01:before {
+  content: "\e610";
+}
+.icon-jiantou:before {
+  content: "\e662";
+}
+.icon-fenxiang:before {
+  content: "\e633";
+}
+.icon-sousuo:before {
+  content: "\e651";
+}
+.nav-box {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.nav-box .searchPage {
+  padding: 0 3%;
+  display: inline-flex;
+}
+.nav-box .searchPage .return text {
+  font-size: 54rpx;
+  color: #000;
+}
+.nav-box .searchPage .search-flex {
+  width: 60vw;
+  height: 50rpx;
+  padding: 0 4%;
+}
+.nav-box .searchPage .search-flex .search-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-box .searchPage .search-flex .search-box .search-frame {
+  width: 80%;
+  height: 40rpx;
+  background-color: #f2f2f2;
+  border-radius: 45rpx;
+  padding: 10rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-box .searchPage .search-flex .search-box .search-frame text {
+  flex: 1;
+  color: #666;
+  font-size: 34rpx;
+  margin-right: 16rpx;
+}
+.nav-box .searchPage .search-flex .search-box .search-frame input {
+  flex: 9;
+  color: #666;
+  font-size: 26rpx;
+}
+.nav-box .n-count {
+  display: flex;
+  align-items: center;
+}
+.nav-box .n-count .n-img {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 16rpx;
+}
+.nav-box .n-count .n-img image {
+  width: 100%;
+}
+.nav-box .n-count .n-name {
+  font-size: 36rpx;
+}
+.nav-box .nav-search {
+  position: absolute;
+}
+.nav-box .nav-search .iconfont {
+  font-size: 36rpx;
+}

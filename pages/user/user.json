@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "zj-nav": "/components/navigation/navigation"
+  },
+  "navigationStyle": "custom"
+}

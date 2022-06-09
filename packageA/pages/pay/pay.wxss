@@ -1,0 +1,158 @@
+/* packageA/pages/pay/pay.wxss */
+page{
+  background-color: #fff;
+}
+
+.userInfo{
+  padding:1% 3%;
+  border-bottom: 1px solid #ccc;
+}
+.userInfo-t{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userName,.userPhone,.userAddress{
+  color: #222;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.carts-item{
+  height: 230rpx;
+  padding: 0 3%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.goods-img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin: 0 25rpx;
+  border: 1px solid #eee;
+}
+.goods-img image{
+  width: 100%;
+}
+
+.goods-info{
+  height: 150rpx;
+}
+.goods-title{
+  width: 450rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-num{
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods-price{
+  font-size: 36rpx;
+  color: #ff6146;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.goodsNum{
+  line-height: 40rpx;
+}
+
+.bom{
+  height: 130rpx;
+}
+.overview{
+  width: 94%;
+  height: 120rpx;
+  padding: 0 3%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.overview-r{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total{
+  font-size: 32rpx;
+  color: #222;
+}
+.total text{
+  color: #ff6146;
+  font-weight: bold;
+}
+.check{
+  width: 180rpx;
+  height: 80rpx;
+  background-color: #ff6146;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+
+.payMask{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pay-box{
+  width: 500rpx;
+  height: 570rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+.pay-title{
+  padding: 50rpx 50rpx 0;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #222;
+}
+.pay-img{
+  width: 300rpx;
+  height: 300rpx;
+  border: 1px solid #ccc;
+  margin: 35rpx auto;
+}
+.pay-img image{
+  width: 99%;
+}
+
+.pay-menu{
+  height: 100rpx;
+  display: flex;
+  border-top: 1px solid #eee;
+}
+.pay-menu > view{
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  color: #333;
+}
+.pay-menu-confirm{
+  color: #5ca8df !important;
+  border-left: 1px solid #eee;
+}

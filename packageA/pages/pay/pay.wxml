@@ -1,0 +1,60 @@
+<!--packageA/pages/pay/pay.wxml-->
+<!--pages/pay/pay.wxml-->
+
+<!-- 卖家地址 -->
+<view class="userInfo">
+  <view wx:if="{{userAddress}}">
+    <view class="userInfo-t">
+      <view class="userName">{{userAddress.name}}</view>
+      <view class="userPhone">{{userAddress.phone}}</view>
+    </view>
+    <view class="userAddress">{{userAddress.allAddress}}</view>
+  </view>
+  <view wx:else>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary">获取地址</button>
+  </view>
+</view>
+
+
+
+<!-- 支付项 -->
+<view class="carts-item" wx:for="{{payCarts}}" wx:key="id" data-cartid="{{item.id}}">
+  <view class="goods-img">
+    <image mode="widthFix" src="{{item.cover_url}}"></image>
+  </view>
+  <view class="goods-info">
+    <view class="goods-title">{{item.title}}</view>
+    <view class="goods-num">
+      <view class="goods-price">￥{{item.price}}</view>
+      <view class="goodsNum">X{{item.goodsCartNum}}</view>
+    </view>
+  </view>
+
+</view>
+
+<view class="bom"></view>
+<!-- 总览 -->
+<view class="overview">
+  <view class="overview-r">
+    <view class="total">
+      共{{payCartsNum}}件，
+      合计:<text>￥{{allPrice}}</text>
+    </view>
+    <view class="check" bind:tap="payGoods">合计</view>
+  </view>
+</view>
+
+<!-- 支付板块 -->
+<view class="payMask" wx:if="{{isPay}}">
+  <view class="pay-box">
+    <view class="pay-title">请扫描二维码支付</view>
+    <view class="pay-img">
+      <image mode="widthFix" src="https://img2.baidu.com/it/u=2656539769,2055516863&fm=253&fmt=auto&app=138&f=JPG?w=408&h=409"></image>
+    </view>
+    <view class="pay-menu">
+      <view class="pay-menu-cancel" bindtap="payMenuCallBack" data-select="{{false}}">取消</view>
+      <view class="pay-menu-confirm" bindtap="payMenuCallBack" data-select="{{true}}">确定</view>
+    </view>
+  </view>
+</view>
+

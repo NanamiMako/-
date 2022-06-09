@@ -1,0 +1,30 @@
+<!--components/navigation/navigation.wxml-->
+<view class="nav-box" style="height: {{capsule.height}}px">
+  <view class="searchPage" wx:if="{{searchIpt}}">
+    <view class="return" bindtap="returnPage">
+      <text class="iconfont icon-fanhuijiantou"></text>
+    </view>
+    <!-- 搜索框 -->
+    <view class="search-flex">
+      <view class="search-box">
+        <view class="search-frame">
+          <text class="iconfont icon-sousuo"></text>
+          <input type="text" class="headerInput" bind:input="headerInput" placeholder="搜索商品" value="{{inputValue}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="n-count">
+      <view class="n-img">
+        <image mode="widthFix" src="/images/logo.png"></image>
+      </view>
+      <view class="n-name">十点读书VIP店</view>
+    </view>
+  </view>
+  <view wx:if="{{searchShow}}" class="nav-search" style="left: {{capsule.left-40}}px;line-height: {{capsule.height}}px">
+      <navigator class="icon" url="/packageA/pages/search/search">
+        <text class="iconfont icon-sousuo"></text>
+      </navigator>
+    </view>
+</view>

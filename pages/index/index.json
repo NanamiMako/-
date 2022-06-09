@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "zj-nav": "/components/navigation/navigation",
+    "van-tabs" : "@vant/weapp/tabs/index",
+    "van-tab" : "@vant/weapp/tab/index",
+    "zj-goodsList": "/components/goods-list/goods-list",
+    "van-loading": "/components/loading/loading"
+  },
+  "navigationStyle": "custom"
+}

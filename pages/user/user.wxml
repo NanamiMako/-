@@ -1,0 +1,74 @@
+<!--pages/user/user.wxml-->
+<view class="navigation" style="margin-bottom: {{capsule.top+10}}px;padding-top: {{capsule.top}}px">
+  <zj-nav capsule="{{capsule}}" searchShow="{{false}}" />
+</view>
+
+<view class="header">
+  <view class="userInfo" bind:tap="signUser">
+    <view class="user-header">
+      <image mode="widthFix" wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}"></image>
+      <text wx:else class="iconfont icon-user"></text>
+    </view>
+    <view class="user-name">
+      <text wx:if="{{userInfo}}">{{userInfo.nickName}} </text>
+      <text wx:else bind:tap="getUserInfo">立即登录</text>
+    </view>
+  </view>
+  <view class="bodys-info ">
+    <!-- 我的订单 -->
+    <view class="order">
+      <view class="order-menu boxflex">
+        <view class="order-item">
+          <text class="iconfont icon-dingdan"></text>
+          <view class="order-item-text">全部订单</view>
+        </view>
+        <view class="order-item">
+          <text class="iconfont icon-31daifukuan"></text>
+          <view class="order-item-text">待付款</view>
+        </view>
+        <view class="order-item">
+          <text class="iconfont icon-daishouhuo-01"></text>
+          <view class="order-item-text">待收货</view>
+        </view>
+        <view class="order-item">
+          <text class="iconfont icon-31daipingjia"></text>
+          <view class="order-item-text">待评价</view>
+        </view>
+        <view class="order-item">
+          <text class="iconfont icon-tuikuantuihuo"></text>
+          <view class="order-item-text">退款/售后</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="tool-box">
+  <view class="item-lists paddingX" bind:tap="collectPage">
+    <view class="item-lists-l">
+      <view class="item-lists_text">我的优惠券</view>
+    </view>
+    <view class="item-lists-r">
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+  </view>
+  <view class="item-lists paddingX" bind:tap="collectPage">
+    <view class="item-lists-l">
+      <view class="item-lists_text">我的地址</view>
+    </view>
+    <view class="item-lists-r">
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+  </view>
+</view>
+
+<view class="tool-box">
+  <view class="item-lists paddingX" bind:tap="collectPage">
+    <view class="item-lists-l">
+      <view class="item-lists_text">联系商家</view>
+    </view>
+    <view class="item-lists-r">
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+  </view>
+</view>

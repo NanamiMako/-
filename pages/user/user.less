@@ -1,0 +1,114 @@
+@import "../../styles/iconfont.wxss";
+
+.navigation{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.header{
+  overflow: hidden;
+  height: 560rpx;
+  padding: 20rpx 3% 0;
+  position: relative;
+  top: 150rpx;
+  .userInfo{
+    background-color: #fff;
+    border-radius: 16rpx;
+    height: 180rpx;
+    width: 90%;
+    padding: 0 3%;
+    margin: 20rpx auto;
+    display: flex;
+    align-items: center;
+    .user-header{
+      width: 100rpx;
+      height: 100rpx;
+      border: 4rpx solid #fff;
+      border-radius: 20rpx;
+      overflow: hidden;
+      background-color: #e8e8e8;
+      text-align: center;
+      margin: 0 40rpx 0 0;
+      position: relative;
+      .iconfont.icon-user{
+        font-size: 104rpx;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      image{
+        width: 100%;
+      }
+    }
+    .user-name{
+      font-size: 38rpx;
+      color: #000;
+    }
+  }
+  .bodys-info{
+    border-radius: 20rpx;
+    background-color: #fff;
+    position: absolute;
+    top: 200rpx;
+    left: 2%;
+    right: 2%;
+    .boxflex{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .order{
+      .order-menu{
+        height: 200rpx;
+        .order-item{
+          text-align: center;
+          .iconfont{
+            font-size:48rpx !important;
+            color: #000;
+          }
+          .order-item-text{
+            font-size: 26rpx;
+            color: #000;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tool-box{
+  background-color: #fff;
+  border-radius: 16rpx;
+  width: 94%;
+  margin: 20rpx auto;
+  .item-lists{
+    padding: 0 3%;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item-lists-l{
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      .item-lists_text{
+        color: #000;
+        font-size: 32rpx;
+      }
+    }
+    .item-lists-r{
+      font-size: 48rpx;
+      .icon-jinrujiantou{
+        font-size: 48rpx;
+      }
+    }
+  }
+}
+
+
+

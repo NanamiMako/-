@@ -1,0 +1,46 @@
+.goods-list {
+  width: 340rpx;
+  margin: 16rpx 0;
+}
+.goods-list .goods-img {
+  width: 100%;
+  min-height: 300rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  overflow: hidden;
+}
+.goods-list .goods-img image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.goods-list .goods-const {
+  background-color: #fff;
+}
+.goods-list .goods-const .goods-title {
+  padding: 16rpx 16rpx 10rpx;
+  line-height: 1.2;
+  font-size: 34rpx;
+  color: #191919;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-list .goods-const .goods-priceInfo {
+  height: 66rpx;
+  padding: 0 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods-list .goods-const .goods-priceInfo .price {
+  font-size: 34rpx;
+  color: #ff6146;
+}
+.goods-list .goods-const .goods-priceInfo .sell_nums {
+  font-size: 26rpx;
+  color: #b2b2b2;
+}

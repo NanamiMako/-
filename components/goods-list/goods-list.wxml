@@ -1,0 +1,15 @@
+<!--components/goods-list/goods-list.wxml-->
+<view class="goods-list">
+  <navigator url="/packageA/pages/goods-detail/goods-detail?id={{dataInfo.id}}">
+    <view class="goods-img">
+      <image mode="widthFix" src="{{dataInfo.cover_url}}"></image>
+    </view>
+    <view class="goods-const">
+      <view class="goods-title">{{dataInfo.description}}</view>
+      <view class="goods-priceInfo">
+        <view class="price">￥{{dataInfo.price}}</view>
+        <view class="sell_nums">{{dataInfo.sales}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>

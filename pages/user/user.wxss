@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3360808 */
+  src: url('//at.alicdn.com/t/font_3360808_4kb0cfzkwia.woff2?t=1651747366521') format('woff2'), url('//at.alicdn.com/t/font_3360808_4kb0cfzkwia.woff?t=1651747366521') format('woff'), url('//at.alicdn.com/t/font_3360808_4kb0cfzkwia.ttf?t=1651747366521') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-31daifukuan:before {
+  content: "\e600";
+}
+.icon-31daipingjia:before {
+  content: "\e601";
+}
+.icon-tuikuantuihuo:before {
+  content: "\e602";
+}
+.icon-dingdan:before {
+  content: "\e649";
+}
+.icon-daishouhuo-01:before {
+  content: "\e610";
+}
+.icon-jiantou:before {
+  content: "\e662";
+}
+.icon-fenxiang:before {
+  content: "\e633";
+}
+.icon-sousuo:before {
+  content: "\e651";
+}
+.navigation {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.header {
+  overflow: hidden;
+  height: 560rpx;
+  padding: 20rpx 3% 0;
+  position: relative;
+  top: 150rpx;
+}
+.header .userInfo {
+  background-color: #fff;
+  border-radius: 16rpx;
+  height: 180rpx;
+  width: 90%;
+  padding: 0 3%;
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+}
+.header .userInfo .user-header {
+  width: 100rpx;
+  height: 100rpx;
+  border: 4rpx solid #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background-color: #e8e8e8;
+  text-align: center;
+  margin: 0 40rpx 0 0;
+  position: relative;
+}
+.header .userInfo .user-header .iconfont.icon-user {
+  font-size: 104rpx;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.header .userInfo .user-header image {
+  width: 100%;
+}
+.header .userInfo .user-name {
+  font-size: 38rpx;
+  color: #000;
+}
+.header .bodys-info {
+  border-radius: 20rpx;
+  background-color: #fff;
+  position: absolute;
+  top: 200rpx;
+  left: 2%;
+  right: 2%;
+}
+.header .bodys-info .boxflex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .bodys-info .order .order-menu {
+  height: 200rpx;
+}
+.header .bodys-info .order .order-menu .order-item {
+  text-align: center;
+}
+.header .bodys-info .order .order-menu .order-item .iconfont {
+  font-size: 48rpx !important;
+  color: #000;
+}
+.header .bodys-info .order .order-menu .order-item .order-item-text {
+  font-size: 26rpx;
+  color: #000;
+  line-height: 2;
+}
+.tool-box {
+  background-color: #fff;
+  border-radius: 16rpx;
+  width: 94%;
+  margin: 20rpx auto;
+}
+.tool-box .item-lists {
+  padding: 0 3%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tool-box .item-lists .item-lists-l {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.tool-box .item-lists .item-lists-l .item-lists_text {
+  color: #000;
+  font-size: 32rpx;
+}
+.tool-box .item-lists .item-lists-r {
+  font-size: 48rpx;
+}
+.tool-box .item-lists .item-lists-r .icon-jinrujiantou {
+  font-size: 48rpx;
+}

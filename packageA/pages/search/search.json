@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-top": "../../../components/navigation/navigation",
+    "goods-list": "../../../components/goods-list/goods-list"
+  },
+  "navigationStyle": "custom"
+}

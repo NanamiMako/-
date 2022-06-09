@@ -1,0 +1,9 @@
+<!--packageA/pages/search/search.wxml-->
+<view class="navigation" style="margin-bottom: {{capsule.top+10}}px;padding-top: {{capsule.top}}px">
+  <nav-top bind:iptChange="searchChange" searchIpt="{{true}}"  capsule="{{capsule}}" />
+</view>
+
+<!-- //搜索结果 -->
+<view class="bodys">
+  <goods-list  wx:for="{{bodysData}}" dataInfo="{{item}}" />
+</view>

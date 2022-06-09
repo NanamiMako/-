@@ -1,0 +1,75 @@
+<!--packageA/pages/goods-detail/goods-detail.wxml-->
+
+<view class="banner">
+  <swiper autoplay="{{true}}" > 
+    <swiper-item>
+      <image mode="widthFix" src="{{goodsData.cover_url}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="dots">
+      <view> {{1}} /{{1}}</view>
+    </view>
+</view>
+
+
+<view class="goods-info">
+  <view class="sell-info">
+    <view class="money">￥{{goodsData.price}}</view>
+    <view class="goodsNum"> {{goodsData.sales}}人买过</view>
+  </view>
+  <view class="goodsTitle ">
+    <view class="goods-name">{{goodsData.title}}</view>
+    <!-- <view class="share"> -->
+      <button class="share share-btn" bindtap="onShare" open-type='share'  plain='{{true}}'>
+        <text class="iconfont icon-fenxiang"></text>
+        <view class="bomtext">分享</view>
+      </button>
+    <!-- </view> -->
+  </view>
+</view>
+
+<view class="goods-detail">
+  <view class="detail-title">商品详情：</view>
+  <view class="notice">
+    ---订阅须知---
+    <view class="const">
+      <view>完成购买后，付款页点【联系客服】完成学习准备流程</view>
+      <view>完成购买后，付款页点【联系客服】完成学习准备流程</view>
+      <view>完成购买后，付款页点【联系客服】完成学习准备流程</view>
+    </view>
+  </view>
+  <!-- 富文本 -->
+  <rich-text nodes="{{goodsData.details}}"></rich-text>
+</view>
+
+
+<!-- 底部固定导航菜单栏 -->
+<view class="navBom">
+  <view class="bomMenu">
+    <view class="shop" bindtap="isCollect">
+    <navigator  open-type="switchTab" url="/pages/index/index">
+      <image src="/images/home.png"></image>
+      <view class="bomtext">首页</view>
+    </navigator>
+    </view>
+    <view class="collect" bindtap="isCollect">
+      <image src="/images/xiaoxi.png"></image>
+      <view class="bomtext">客服</view>
+    </view>
+    <view class="cart">
+      <navigator open-type="switchTab" url="/pages/shopping/shopping">
+        <image src="/images/shopping.png"></image>
+        <view class="bomtext">购物车</view>
+        <view class="cartsNum">{{cartsArrLength}}</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="joinCart" bindtap="jionCart">
+    <view class="carts">加入购物袋</view>
+    <view class="carts-radius">
+      <view class="radiusConter">买</view>
+    </view>
+  </view>
+</view>
+
+

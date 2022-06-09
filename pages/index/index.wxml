@@ -1,0 +1,39 @@
+<!--pages/index/index.wxml-->
+<view class="navigation" style="margin-bottom: {{capsule.top+10}}px;padding-top: {{capsule.top}}px">
+  <zj-nav capsule="{{capsule}}" searchShow="{{true}}" />
+</view>
+
+<!-- //选项卡组件 -->
+<view class="tabsBox" style="top: {{capsule.top + capsule.height-1}}px">
+  <van-tabs v-model:active="active"
+   bind:click="tabsClick"
+    bind:change="onChangeTabs"
+     type="none"
+      title-active-color="#171717"
+       title-inactive-color="#a5a5a5">
+    <van-tab title="默认" name="0"></van-tab>
+    <van-tab title="新品" name="1"></van-tab>
+    <van-tab title="销量" name="2"></van-tab>
+    <van-tab title="价格 {{ tabsPriceIcon}}" name="3" bind:tap="tabsPriceChange"></van-tab>
+  </van-tabs>
+</view>
+
+<!-- 主体 -->
+<view class="bodys" style="margin-top: {{capsule.top + 10 + capsule.top + capsule.height-2}}px">
+
+  <zj-goodsList wx:for="{{bodysData}}" dataInfo="{{item}}" />
+
+</view>
+
+<!-- // -->
+<view class="data-end" wx:if="{{dataEnd}}">
+  暂无更多数据
+</view>
+
+<van-loading wx:if="{{loadingCenter}}" class="loading-center" size="48" type="spinner" color="#1989fa" vertical>
+  加载中...
+</van-loading>
+
+<view wx:if="{{loadingBottom}}" class="loading-box">
+  <van-loading class="loading-bottom" size="48" type="spinner" color="#1989fa"></van-loading>
+</view>

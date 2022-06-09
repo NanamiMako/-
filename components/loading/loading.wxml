@@ -1,0 +1,4 @@
+<!--components/loading/loading.wxml-->
+<van-loading size="48" type="spinner" color="#1989fa" vertical>
+  加载中...
+</van-loading>
